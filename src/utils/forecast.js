@@ -8,7 +8,7 @@ let forecast = (latitude, longitude, callback) =>{
         }else if(response.body.error){
             callback('Check the address you sent', undefined);
         }else{
-            callback(undefined,'It is ' + current.weather_descriptions + ', and currently ' + current.temperature + ' degrees out. It feels like ' + current.feelslike + ' degrees out, humidity is ' + current.humidity + '% and wind speed is ' + current.wind_speed + ' m/s.');
+            callback(undefined,'It is ' + current.weather_descriptions + ', and currently ' + current.temperature + ' degrees out. It feels like ' + current.feelslike + ' degrees out, humidity is ' + current.humidity + '% and wind speed is ' + current.wind_speed + ' km/h.');
         }        
     });
 }
